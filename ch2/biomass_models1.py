@@ -25,18 +25,10 @@ S0 : float
 k : float
     Rate constant (1/day)
 
-Example Usage
-------------
-Default parameters (reproduces Fig 2.2):
-    python biomass_models1.py
-
-Custom parameters:
-    python biomass_models1.py --t_max=10 --S0=10 --k=0.5
-
 Output
 ------
 - Displays the figure on screen
-- Saves as 'biomass_models1_output.png' in the current directory
+- Saves as 'fig2_2.png' in the current directory
 - Both subplots show the dynamics of substrate/product and nutrient/phytoplankton
 """
 
@@ -252,7 +244,7 @@ def main():
             t_max=args.t_max,
             S0=args.S0,
             k=args.k,
-            save_path="biomass_models1_output.png"
+            save_path="fig2_2.png"
         )
         
         plt.show()
